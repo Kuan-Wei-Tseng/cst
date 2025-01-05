@@ -1,4 +1,4 @@
-# CST: Character State Transformer for Object-Conditioned Human Motion Prediction
+# CST: Character State Transformer for Object-Conditioned Human Motion Prediction (WACV 2025 CV4Smalls Workshop)
 
 This is the official implementation of Character State Transformer.
 
@@ -31,4 +31,15 @@ Comment out the following codes in `cst_finetune.py` to train the model from scr
 ```python
 pretrain_checkpoint = torch.load("../pretrain/results/checkpoints/mask0.2_cmu50k_20epoch.pth")
 model.decoder.HJT.load_state_dict(pretrain_checkpoint['model_state_dict'])
+```
+
+## BibTeX
+```
+@InProceedings{cst_2025_WACV,
+    author    = {Tseng, Kuan-Wei and Kawakami, Rei and Ikehata, Satoshi and Sato, Ikuro},
+    title     = {CST: Character State Transformer for Object-Conditioned Human Motion Prediction},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops},
+    month     = {February},
+    year      = {2025}
+}
 ```
